@@ -1,0 +1,9 @@
+Sphinx
+docutils
+recommonmark
+sphinx-rtd-theme
+sphinxprettysearchresults
+readthedocs-sphinx-ext
+jieba
+pypinyin
+MarkdownPP
