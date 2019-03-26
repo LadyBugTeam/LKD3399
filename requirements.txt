@@ -2,6 +2,7 @@ Sphinx
 docutils
 recommonmark
 sphinx-rtd-theme
+t3SphinxThemeRtd
 sphinxprettysearchresults
 readthedocs-sphinx-ext
 jieba
