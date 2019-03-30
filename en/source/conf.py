@@ -113,11 +113,11 @@ if on_rtd:
 # VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
 html_context = {
     "css_files": ["_static/css/fiware_readthedocs.css",], #logo
-    "display_github": True, # Integrate GitHub
-    "github_user": "kaspter", # Username
-    "github_repo": "xxx_docs", # Repo name
-    "github_version": "master", # Version
-    "conf_py_path": "/en/source/", # Path in the checkout to the docs root
+#    "display_github": True, # Integrate GitHub
+#    "github_user": "kaspter", # Username
+#    "github_repo": "xxx_docs", # Repo name
+#    "github_version": "master", # Version
+#    "conf_py_path": "/en/source/", # Path in the checkout to the docs root
 }
 
 
