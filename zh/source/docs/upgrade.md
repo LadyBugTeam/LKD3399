@@ -40,7 +40,3 @@
    ``` sh
    sudo upgrade_tool uf update.img
    ``` 
-
-1)烧写双系统固件(默认)：
-
-
