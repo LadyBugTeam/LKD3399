@@ -68,13 +68,13 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'en'
+language = 'zh_CN'
 
 # Language to be used for generating the HTML full-text search index.
 # Sphinx supports the following languages:
 #   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
 #   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr', 'zh'
-html_search_language = 'en'
+html_search_language = 'zh'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -146,23 +146,42 @@ htmlhelp_basename = project
 
 # -- Options for LaTeX output ------------------------------------------------
 
-latex_elements = {
+if on_rtd:
+
+    latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-
+    #'papersize': 'letterpaper',
     # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
+    #'pointsize': '10pt',
     # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-}
+    'preamble': r'''
+    \hypersetup{unicode=true}
+    \usepackage{CJKutf8}
+    \DeclareUnicodeCharacter{00A0}{\nobreakspace}
+    \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
+    \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
+    \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
+    \DeclareUnicodeCharacter{2713}{x}
+    \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
+    \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
+    \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
+    \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+    \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
+    \begin{CJK}{UTF8}{gbsn}
+    \AtEndDocument{\clearpage\end{CJK}}
+    ''',
+    }
+else:
+    latex_elements = {
+        'papersize' : 'a4paper',
+        'utf8extra' : '',
+        'inputenc'  : '',
+        'babel'     : r'''\usepackage[english]{babel}''',
+        'preamble' : r'''
+        \usepackage{ctex}
+        ''',
+    }
+    latex_engine = 'xelatex'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
