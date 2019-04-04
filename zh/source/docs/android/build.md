@@ -50,6 +50,7 @@ sudo apt-get install gcc-arm-linux-gnueabihf \
 ``` shell
 $ md5sum /path/to/RK3399-LB_Android7.1.2_git.7z
 6d34e51fd7d26e9e141e91b0c564cd1f RK3399-LB_Android7.1.2_git.7z
+```
 
 然后解压：
 
