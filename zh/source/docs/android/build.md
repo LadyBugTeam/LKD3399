@@ -22,7 +22,7 @@
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
-```
+``` 
 
 **安装环境包**
 
@@ -36,7 +36,7 @@ sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev \
 sudo apt-get install gcc-arm-linux-gnueabihf \
   libssl1.0.0 libssl-dev \
   p7zip-full
-```
+``` 
 
 ## 下载源码
 
@@ -50,7 +50,7 @@ sudo apt-get install gcc-arm-linux-gnueabihf \
 ``` shell
 $ md5sum /path/to/RK3399-LB_Android7.1.2_git.7z
 6d34e51fd7d26e9e141e91b0c564cd1f RK3399-LB_Android7.1.2_git.7z
-```
+``` 
 
 然后解压：
 
@@ -59,20 +59,20 @@ mkdir -p ~/proj/LB3399_SDK
 cd ~/proj/LB3399_SDK
 7z x /path/to/RK3399-LB_Android7.1.2_git.7z
 git reset --hard
-```
+``` 
 
 更新远程仓库：
 
 ``` shell
 git remote rm origin
 git remote add gitlab  https://gitlab.com/ladybug/RK3399-Nougat.git
-```
+``` 
 
 从 gitlab 处同步源码：
 
 ``` shell
 git pull gitlab lb3399-dev:lb3399-dev
-```
+``` 
 
 ## 编译固件
 
@@ -82,7 +82,7 @@ git pull gitlab lb3399-dev:lb3399-dev
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
-```
+``` 
 
 **编译 U-Boot**
 
@@ -90,7 +90,7 @@ export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 cd u-boot
 make rk3399_defconfig
 make ARCHV=aarch64 -j16
-```
+``` 
 
 **编译内核**
 
@@ -98,7 +98,7 @@ make ARCHV=aarch64 -j16
 cd kernel
 make ARCH=arm64 lb3399_android_defconfig
 make ARCH=arm64 rk3399-epoch-android.img -j16
-```
+``` 
 
 **编译 Android**
 
@@ -107,7 +107,7 @@ source build/envsetup.sh
 lunch rk3399_all-userdebug
 make installclean
 make -j16
-```
+``` 
 
 ## 打包固件
 
