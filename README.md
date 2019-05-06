@@ -15,6 +15,7 @@ Those tools are best installed using [pip](https://pip.pypa.io), Python's module
 ```sh
 # Install requiremnts
 sudo apt-get install virtualenv
+
 virtualenv --python=python3 ./venv
 source ./venv/bin/activate
 pip install -r requirements.txt
