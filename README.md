@@ -15,8 +15,8 @@ Those tools are best installed using [pip](https://pip.pypa.io), Python's module
 ```sh
 # Install requiremnts
 sudo apt-get install virtualenv
-virtualenv --python=python3 ~/sphinx-markdown
-source ~/sphinx-markdown/bin/activate
+virtualenv --python=python3 ./venv
+source ./venv/bin/activate
 pip install -r requirements.txt
 
 # Build English Manual
@@ -29,7 +29,7 @@ make -C cn html
 The compilation might take some time. You can then test the changes live by opening `en/build/html/index.html` in your favorite browser.
 
 
-`source ~/sphinx-markdown/bin/activate` needs to run once before the `make` commands.
+`source ./venv/bin/activate` needs to run once before the `make` commands.
 
 ## License
 
