@@ -24,7 +24,7 @@ pip install -r requirements.txt
 make -C en html
 
 # Build Chinese Manual
-make -C cn html
+make -C zh html
 ```
 
 The compilation might take some time. You can then test the changes live by opening `en/build/html/index.html` in your favorite browser.
