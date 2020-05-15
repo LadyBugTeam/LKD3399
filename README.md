@@ -1,8 +1,8 @@
-# LB3399 Manual
+# LKD3399 Manual
 
-This repository contains the source files of [LB3399](https://www.ladybug.com)'s documentation, in MarkDown language.
+This repository contains the source files of [LKD3399](https://www.ladybug.com)'s documentation, in MarkDown language.
 
-They are meant to be parsed with the [Sphinx](https://sphinx-doc.org/) documentation builder to build the HTML documentation on [LB3399's website](https://docs.ladybug.com).
+They are meant to be parsed with the [Sphinx](https://sphinx-doc.org/) documentation builder to build the HTML documentation on [LKD3399's website](https://docs.ladybug.com).
 
 
 ## Building with Sphinx and virtualenv

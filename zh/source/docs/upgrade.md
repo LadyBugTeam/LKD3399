@@ -9,7 +9,7 @@
 
    ![](../images/usb_drv.png)
 
-3、Type-C线连接主机端的USB接口和LB3399发板的Type-C接口，进入烧写模式。
+3、Type-C线连接主机端的USB接口和LKD3399发板的Type-C接口，进入烧写模式。
 
 4、将固件解压到AndroidTool_Release_v2.64\images目录下。
 
@@ -17,7 +17,7 @@
 
    ![](../images/usb_drv.png)
 
-6、长按LB3399发板上recovery按键后重启机器，直到系统进入Loader模式，如下所示：
+6、长按LKD3399发板上recovery按键后重启机器，直到系统进入Loader模式，如下所示：
 
    ![](../images/usb_drv.png)
 
@@ -29,9 +29,9 @@
 
 1、安装Linux烧写工具 [**upgrade_tool**](https://www.google.com)
 
-2、Type-C线连接主机端的USB接口和LB3399开发板的Type-C接口。
+2、Type-C线连接主机端的USB接口和LKD3399开发板的Type-C接口。
 
-3、长按LB3399开发板上recovery按键后重启机器，进入Loader模式。
+3、长按LKD3399开发板上recovery按键后重启机器，进入Loader模式。
 
 4、将固件解压到linuxTool-v1.0/images目录下。
 
