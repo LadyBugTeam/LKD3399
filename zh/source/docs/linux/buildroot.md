@@ -31,8 +31,8 @@ sudo apt-get install libfile-which-perl sed make binutils gcc g++ bash patch gzi
 ## 下载源码
 
 ``` shell
-mkdir LKD3399
-cd LKD3399
+mkdir LKD3399Pro
+cd LKD3399Pro
 repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399_linux_release.xml
 repo sync
 ``` 
@@ -45,7 +45,7 @@ repo sync
 为了提高编译的效率，降低人工编译可能出现的误操作，该 SDK 中集成了全自动化编译脚本，方便固件编译、备份。强烈建议使用脚本编译。
 
 ``` shell
-cd LKD3399
+cd LKD3399Pro
 ./build.sh
 ``` 
 

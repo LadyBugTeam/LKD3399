@@ -5,13 +5,13 @@
 
 ### 1. SecureCRT串口工具
 
-   将LKD3399开发板的Debug口连接到PC端的USB口，打开设备管理器获取USB Serial Port的端口号，如下图所示：
+   将LKD3399Pro开发板的Debug口连接到PC端的USB口，打开设备管理器获取USB Serial Port的端口号，如下图所示：
 
    ![](../images/SecureCRT_list.png)
 
 ### 2. Minicom串口工具
 
-1、将LKD3399开发板的Debug口连接到主机端的USB口。
+1、将LKD3399Pro开发板的Debug口连接到主机端的USB口。
 
 2、以root权限打开minicom： sudo minicom -s。
 
