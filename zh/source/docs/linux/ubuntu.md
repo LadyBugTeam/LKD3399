@@ -1,6 +1,5 @@
 # Ubuntu 
 
-## ubuntu 16.04
-
-
 ## ubuntu 18.04
+
+

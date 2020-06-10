@@ -22,7 +22,6 @@ LKD3399 用户手册
    :maxdepth: 2
    :caption: Linux开发
 
-   docs/linux/debian
    docs/linux/ubuntu
    docs/linux/buildroot
 
