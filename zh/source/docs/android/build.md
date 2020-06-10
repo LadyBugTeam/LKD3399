@@ -7,7 +7,7 @@
 
 - 64 位 CPU
 - 16GB  内存 + 交换内存
-- 100GB  空闲空间用来编译， 源码树另占 8GB
+- 200GB  空闲空间用来编译， 源码树另占 8GB
 
 另外可参考 Google 官方文档硬件和软件配置：
 
@@ -97,7 +97,8 @@ make ARCHV=aarch64 -j16
 ``` shell
 cd kernel
 make ARCH=arm64 lb3399_android_defconfig
-make ARCH=arm64 rk3399-epoch-android.img -j16
+make ARCH=arm64 rk3399-epoch-android.img -j16       // for lkd3399
+make ARCH=arm64 rk3399-blend-android.img -j16       // for lbd3399
 ``` 
 
 **编译 Android**
@@ -132,7 +133,7 @@ make -j16
 - `resource.img`： Resource 映像， 包含启动图片和内核设备树。
 - `misc.img`： misc 分区映像， 负责启动模式的切换和急救模式参数的传递。
 - `recovery.img`： Recovery 模式映像。
-- `rk3399_loader_v1.08.244.bin`： Loader 文件。
+- `rk3399_loader_xxx.bin`： Loader 文件。
 - `uboot.img`： U-Boot 映像文件。
 - `trust.img`： Arm trusted file (ATF) 映像文件。
 - `parameter.txt`： 分区布局和内核命令行。
