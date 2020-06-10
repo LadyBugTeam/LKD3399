@@ -144,6 +144,10 @@ html_logo = 'images/logo.png'
 htmlhelp_basename = project
 
 
+
+html_show_sourcelink = False
+
+
 # -- Options for LaTeX output ------------------------------------------------
 
 if on_rtd:
