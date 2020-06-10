@@ -3,16 +3,15 @@
 
 ## Android 固件
 
-[android固件](https://www.google.com/)
+- [lkd3399_android](https://www.google.com/)
+- [lbd3399_android](https://www.google.com/)
 
 ## Ubuntu 固件
 
-[ubuntu固件](https://www.google.com/)
-
-## Debian 固件
-
-[debian固件](https://www.google.com/)
+- [lkd3399_bionic](https://www.google.com/)
+- [lbd3399_bionic](https://www.google.com/)
 
 ## buildroot 固件
 
-[buildroot固件](https://www.google.com/)
+- [lkd3399_buildroot](https://www.google.com/)
+- [lbd3399_buildroot](https://www.google.com/)
