@@ -19,7 +19,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'LKD3399-Board'
+project = 'LX3288-Board'
 copyright = '2018-2019, LadyBug Community (CC-BY 3.0)'
 author = 'LadyBug Community'
 

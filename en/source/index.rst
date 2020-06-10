@@ -1,6 +1,6 @@
-.. LKD3399-Epoch Board documentation master file.
+.. LX3288-Epoch Board documentation master file.
 
-LKD3399 User Manual
+LX3288 User Manual
 =====================================
 
 .. toctree::

@@ -55,8 +55,8 @@ $ md5sum /path/to/RK3399-LB_Android7.1.2_git.7z
 然后解压：
 
 ``` shell
-mkdir -p ~/proj/LKD3399_SDK
-cd ~/proj/LKD3399_SDK
+mkdir -p ~/proj/LX3288_SDK
+cd ~/proj/LX3288_SDK
 7z x /path/to/RK3399-LB_Android7.1.2_git.7z
 git reset --hard
 ``` 
